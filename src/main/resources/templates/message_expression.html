@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>Hello page</h1>
+  <p th:text="'from parameter... id=' + ${param.id[0]} + ',name=' + ${param.name[0]}"></p>
+  <!-- 메시지식은 프로젝트에 미리 준비해둔 프로퍼티(property) 파일(설정파일)에서 값을 가져와서 표시하는 것이다. -->
+  <!-- param 변수를 사용 -->
+  <!-- param은 변수식(${})에서 직접 사용할 수 있는 변수다. -->
+  
+  <!-- 주의 -->
+  <!-- param의 값들은 배열형태로 되어 있으므로 배열 내에서 값을 추출하는 경우가 많다. -->
+  
+  
+  <!-- 텍스트 리터럴 -->
+  <!-- OGNL의 텍스트 리터럴은 작은따옴표(' ') 혹은 큰 따옴표(" ") 사이에 작성을 하면 된다. -->
+  <!-- 하나의 텍스트는 큰 따옴표로 작성해도 되지만, --> 
+  <!-- 다수의 리터럴을 연결할 때는 큰 따옴표 내부에서 작은 따옴표를  사용하여 연결한다. -->
+</body>
+</html>

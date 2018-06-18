@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>Hello page</h1>
+  <p th:text="${#dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm')}"></p>
+  <p th:text="${#numbers.formatInteger(1234, 7)}"></p>
+  <p th:text="${#strings.toUpperCase('Welcome to Spring.')}"></p>
+  <!-- 변수식의 변수를 매번 컨트롤러를 통해 받아올 필요는 없음 -->
+  <!-- 클래스 중에 템플릿 사용 빈도가 높은 것들을 미리 준비해 준 것이 유틸리티 객체이다 -->
+  <!-- #이름s 의 형태 -->
+
+  <!-- #strings String클래스 상수-->
+  <!-- #numbers Number클래스 상수-->
+  <!-- #bools Boolean클래스 상수-->
+  <!-- #dates Date클래스 상수-->
+  <!-- #objects Object클래스 상수-->
+  <!-- #arrays Array클래스 상수-->
+  <!-- #lists List클래스 상수-->
+  <!-- #sets Set클래스 상수-->
+  <!-- #maps Map클래스 상수-->
+</body>
+</html>
